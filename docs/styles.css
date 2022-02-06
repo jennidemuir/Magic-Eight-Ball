@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    background-color: rgba(247, 210, 237, 0.418) ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    padding-bottom: 10px;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+strong {
+    font-size: 175%;
+     color: rgb(255, 246, 246);
+    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 2px 0 #000, -1px 0 0 #000;
+}
+
+.description{
+    margin: 0 50px 50px 50px;
+    text-align: center;
+
+}
+
+
+.ball{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 500px;
+    height: 500px;
+    background: #0f0701;
+    border-radius: 50%;
+}
+.eight{
+    font-size: 350px;
+    color: white;
+
+}
+.aperture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42%;
+    height: 42%;
+    background: rgba(70, 70, 204, 0.651);
+    border-radius: 50%
+}
+
+.triangle{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 125px solid rgb(147, 98, 238);
+}
+
+.text {
+    text-align: center;
+    color:white;
+    text-shadow: .5px.5px purple;
+    position: absolute;
+    bottom: -105px; /* baseline */
+    left: -45px;   /* left tip */
+    right: -45px;  /* right tip */
+    width: auto;    /* reset width:100% from div */
+    height: auto;   /* just in case */
+}
+
+.down{
+    border-bottom: 0;
+    border-top: 125px solid rgb(147, 98, 238);
+}
+
+.txtDown{
+    bottom: 0; /* baseline */
+    top: -110px;
+
+}
+
+.left{
+    border-left:0;
+    border-top: 75px solid transparent;
+    border-right: 125px solid rgb(147, 98, 238);
+    border-bottom: 75px solid transparent;
+}
+
+.txtLeft{
+    left:45px;
+    right: -115px;
+    bottom: -25px;
+    top: -25px;
+}
+
+.right{
+    border-right:0;
+    border-top: 75px solid transparent;
+    border-left: 125px solid rgb(147, 98, 238);
+    border-bottom: 75px solid transparent;
+}
+
+.txtRight{
+    right:45px;
+    left: -115px;
+    bottom: -25px;
+    top: -15px;
+}
+
+
+.ball:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+@media (max-width: 720px){
+    .ball {
+        width: 400px;
+        height: 400px;
+    }
+
+    .eight{
+        font-size: 250px;
+    }
+
+    .triangle{
+        border-left: 65px solid transparent;
+        border-right: 65px solid transparent;
+        border-bottom: 100px solid rgb(147, 98, 238);
+    }
+
+    .text {
+        font-size: 13px;
+        bottom: -75px; /* baseline */
+        left: -35px;   /* left tip */
+        right: -35px;  /* right tip */
+
+    }
+
+    .down{
+        border-bottom: 0;
+        border-top: 100px solid rgb(147, 98, 238);
+    }
+
+    .txtDown{
+        bottom: 0; /* baseline */
+        top: -85px;
+
+    }
+
+    .left{
+        border-left:0;
+        border-top: 65px solid transparent;
+        border-right: 100px solid rgb(147, 98, 238);
+        border-bottom: 65px solid transparent;
+    }
+
+    .txtLeft{
+        left: 35px;
+        right: -95px;
+        bottom: -35px;
+
+
+    }
+
+    .right{
+        border-right:0;
+        border-top: 65px solid transparent;
+        border-left: 100px solid rgb(147, 98, 238);
+        border-bottom: 65px solid transparent;
+    }
+
+    .txtRight{
+        right: 35px;
+        left: -95px;
+        bottom: -25px;
+
+    }
+
+}
