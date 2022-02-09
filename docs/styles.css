@@ -11,7 +11,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 h1{
@@ -29,9 +28,7 @@ strong {
 .description{
     margin: 0 50px 50px 50px;
     text-align: center;
-
 }
-
 
 .ball{
     display: flex;
@@ -45,8 +42,8 @@ strong {
 .eight{
     font-size: 350px;
     color: white;
-
 }
+
 .aperture{
     display: flex;
     justify-content: center;
@@ -86,7 +83,6 @@ strong {
 .txtDown{
     bottom: 0; /* baseline */
     top: -110px;
-
 }
 
 .left{
@@ -165,7 +161,6 @@ strong {
         bottom: -75px; /* baseline */
         left: -35px;   /* left tip */
         right: -35px;  /* right tip */
-
     }
 
     .down{
@@ -176,7 +171,6 @@ strong {
     .txtDown{
         bottom: 0; /* baseline */
         top: -85px;
-
     }
 
     .left{
@@ -190,8 +184,6 @@ strong {
         left: 35px;
         right: -95px;
         bottom: -35px;
-
-
     }
 
     .right{
@@ -205,7 +197,6 @@ strong {
         right: 35px;
         left: -95px;
         bottom: -25px;
-
     }
 
 }

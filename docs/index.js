@@ -136,7 +136,6 @@ let randomNumber = 0
 //set randomNumber
 const handleRandomNumber = () => {
     randomNumber = Math.floor(Math.random() * 20) + 1
-    console.log(randomNumber)
 }
 
 // hide triangle on mouseover
@@ -147,11 +146,10 @@ ball.addEventListener('mouseover', () => {
     handleRandomNumber()
 })
 
-//show triangle on mouseout
+//show triangle with phrase on mouseout
 ball.addEventListener('mouseout', () => {
     text.innerText = phrases[randomNumber].phrase
     text.classList.add(phrases[randomNumber].text)
     triangle.classList.add(phrases[randomNumber].direction)
     triangle.style.visibility = ''
-
 })
