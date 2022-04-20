@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(146, 121, 206) ;
+    background-color: rgb(159, 118, 255) ;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -62,7 +62,7 @@ strong {
     height: 0;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-    border-bottom: 125px solid rgb(147, 98, 238);
+    border-bottom: 125px solid rgb(123, 59, 240);
 }
 
 .text {
@@ -79,7 +79,7 @@ strong {
 
 .down{
     border-bottom: 0;
-    border-top: 125px solid rgb(147, 98, 238);
+    border-top: 125px solid rgb(123, 59, 240);
 }
 
 .txtDown{
@@ -90,7 +90,7 @@ strong {
 .left{
     border-left:0;
     border-top: 75px solid transparent;
-    border-right: 125px solid rgb(147, 98, 238);
+    border-right: 125px solid rgb(123, 59, 240);
     border-bottom: 75px solid transparent;
 }
 
@@ -104,7 +104,7 @@ strong {
 .right{
     border-right:0;
     border-top: 75px solid transparent;
-    border-left: 125px solid rgb(147, 98, 238);
+    border-left: 125px solid rgb(123, 59, 240);
     border-bottom: 75px solid transparent;
 }
 
